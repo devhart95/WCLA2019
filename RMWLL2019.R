@@ -1,6 +1,7 @@
 install.packages('rvest')
 library(rvest)
 
+
 #RMWLL
 BYUweb <- 'https://www.wcla.club/stats/team_instance/4134315?subseason=569703&tab=team_instance_player_stats&tool=3453565'
 CUweb <- 'https://www.wcla.club/stats/team_instance/4134318?subseason=569703&tab=team_instance_player_stats&tool=3453565'
