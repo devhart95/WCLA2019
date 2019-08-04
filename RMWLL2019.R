@@ -24,30 +24,30 @@ BYU.stats <- data.frame(TeamData(BYUweb))
 CSU.stats <- data.frame(TeamData(CSUweb))
 CU.stats <- data.frame(TeamData(CUweb))
 
+
+
+
 #Which team had the highest average DC per game?
-Utahdc <- mean(Utah.stats$DC)
-BYUdc <- mean(BYU.stats$DC)
-CUdc <- mean(CU.stats$DC)
-CSUdc <- mean(CSU.stats$DC)
+Utahdc <- Utah.stats$DC / Utah.stats$GP
+Utahdcmean <- mean(Utahdc)
+
+BYUdc <- BYU.stats$DC / BYU.stats$GP
+BYUdcmean <- mean(BYUdc)
+
+CUdc <- CU.stats$DC / CU.stats$GP
+CUdcmean <- mean(CUdc)
+
+CSUdc <- CSU.stats$DC / CSU.stats$GP
+CSUdcmean <- mean(CSUdc)
+
+
+
 
 Utahgoals <- mean(Utah.stats$G)
 BYUgoals <- mean(BYU.stats$G)
 CUgoals <- mean(CU.stats$G)
 CSUgoals <- mean(CSU.stats$G)
 
-
-UtahDC <- Utah.stats$DC / Utah.stats$GP
-Utah.stats$DCgame <- UtahDC
-
-
-BYUDC <- BYU.stats$DC / BYU.stats$GP
-BYU.stats$DCgame <- BYUDC 
-
-CUDC <- CU.stats$DC / CU.stats$GP
-CU.stats$DCgame <- CUDC
-
-CSUDC <- CSU.stats$DC / CSU.stats$GP
-CSU.stats$DCgame <- CSUDC
 
 
 
